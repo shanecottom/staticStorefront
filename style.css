@@ -1,0 +1,249 @@
+/*Common Elements*/
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: ivory;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkred;
+    margin: 0.5em 0 0.5em 0;
+    padding: 0;
+}
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: burlywood;
+    padding: 0px;
+    margin: 0.5em 0 0.35em 0;
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+    margin: 0px 0.5em 0.75em 0px;
+}
+ol {
+    font-size: 1.2em;
+    margin: 0 0 0 1.0em;
+    padding: 0 0 0 1.0em;
+}
+ol li {
+    margin: 0;
+    padding: 0 0 0.2em;
+}
+a, a:visited {
+    color: #c64322;
+}
+a:hover {
+    color: #333;
+}
+hr {
+    padding: 0;
+    margin: 1.5em 1.5em 0.75em 0.5em;
+}
+.contentWrapper {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 3.0em;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+/*Header*/
+#divHeaderText {
+    color: darkred;
+    text-align: left;
+    font-size: 72px;
+}
+header {
+    background-color: burlywood;
+    text-align: right;
+    padding: 2em 0 0.5em 0;
+    border-bottom: solid 1px brown;
+    box-shadow:
+        0 4px 8px 0 black,
+        0 6px 20px 0 black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+}
+nav h3 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkred;
+    font-size: 8.0em;
+    margin: 0;
+    /* text-shadow: 1px 2px 0 brown; offset-x | offset-y | blur-radius | color; */
+}
+/*Nav Bars*/
+nav {
+    color: #000;
+    font-size: 1.7em;
+    letter-spacing: 0.04em;
+    padding: 1.0em 1.0em 0em;
+    margin: 1.0em 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+nav li a, nav li a:visited {
+    text-decoration: none;
+    color: #c64322;
+    padding: 0.3em 0.6em;
+}
+nav li a:hover {
+    color: #c64322;
+    background-color: burlywood;
+}
+nav#utilityMenu {
+    float: right;
+    margin: -1.5em 0 0 0;
+    padding: 0.35em;
+    background-color: darkred;
+    height: 1.3em;
+}
+nav#utilityMenu li {
+    padding: 0 0.25em 0 0.2em;
+    vertical-align: middle;
+}
+nav#utilityMenu ul li.acctNav a, nav#utilityMenu ul li.acctNav a:visited {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    height: 1.25em;
+    padding: 0.5em;
+    margin: -0.4em 0 0 0;
+    font-size: 0.8em;
+}
+nav#utilityMenu ul li.acctNav a.active {
+    background-attachment: #c64322;
+}
+nav#utilityMenu ul li.acctNav a:hover {
+    background-color: rgba(252,251,243,0.7);
+    color: #c64322;
+}
+nav#utilityMenu li a, nav#utilityMenu li a:visited { padding: 0;}
+nav#utilityMenu li a:hover { background-color: transparent;}
+nav#utilityMenu ul li input#search {
+    vertical-align: middle;
+    margin: 0 0 0 1.0em;
+}
+nav#utilityMenu ul li.acctNav::before, nav#utilityMenu ul li input#search::before {
+    content: "| ";
+    color: #fcfbe6;
+}
+/*Sidebar Section*/
+section#sidebar {
+    width: 238px;
+    float: left;
+    position: relative;
+    display: block;
+    background-color: darkred;
+    margin: 5.5em 0 3.0em -12.0em;
+    padding: 1.7em 0.5em 2.0em 1.7em;
+    border-left: brown solid 5px;
+    border-bottom: brown solid 5px;
+    box-shadow:
+        0 4px 8px 0 black,
+        0 6px 20px 0 black;
+}
+p#whyPropane {
+    color: ivory
+}
+/*Main Section*/
+div.mainHeadline {
+    font-size: 36px;
+    padding: 1em 1em 1em 1em;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+section #main {
+    background-color: burlywood;
+    margin: 0 0 2.0em;
+    padding: 1.5em 0 2.0em 1.5em;
+    display: inline-block;
+    border-radius: 2em;
+    box-shadow: 1px 1px 5px brown;
+}
+section div.panel {
+    float: right;
+    position: relative;
+    width: 625px;
+    margin: 0 1.0em 4.0em 0.5em;
+    padding: 1.0em;
+    background-color: burlywood;
+    border-left: brown solid 5px;
+    border-bottom: brown solid 5px;
+    border-radius: 0.6em;
+}
+section div.panel img.panelPicture {
+    width: 500px;
+    height: 500px;
+}
+div.divSafetyFirst {
+    color: ivory;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    float: center;
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    margin: 1.0em 0.5em 2.0em 0.5em;
+    padding: 2.0em;
+    background-color: darkred;
+    border-left: brown solid 5px;
+    border-bottom: brown solid 5px;
+    border-radius: 1em;
+    box-shadow:
+        0 4px 8px 0 black,
+        0 6px 20px 0 black;
+    margin-top: 750px;
+    margin-left: 700px;
+}
+iframe {
+    margin-left: 90px;
+}
+/*Footer*/
+footer {
+    background-color: darkred;
+    height: 25px;
+    font-size: 1.2em;
+    color: ivory;
+    text-align: center;
+    padding: 1.5em 2.0em;
+    position: absolute;
+    margin-top: 1150px;
+    width: 100%;
+}
+footer ul#menuFooter {
+    display: inline-block;
+    list-style: none;
+    margin: 0 0 0.6em;
+    padding: 0;
+}
+footer ul li {
+    display: inline-block;
+    padding: 0 0.7em 0 0;
+    margin: 0;
+}
+footer ul li::before {
+    content: "| ";
+    padding-right: 0.7em;
+}
+footer a, footer a:visited {
+    color: ivory;
+    text-decoration: none;
+}
+footer a:hover {
+    color: ivory;
+    text-decoration: underline;
+}
